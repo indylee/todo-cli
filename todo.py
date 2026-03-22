@@ -28,7 +28,7 @@ def add_todo(text):
 def list_todos():
     todos = load_todos()
     if not todos:
-        print("할 일이 없습니다..")
+        print("할 일이 없습니다...")
         return
 
     for t in todos:
