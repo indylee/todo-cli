@@ -5,13 +5,8 @@ on:
     branches:
       - main
 
-env:
-  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+
   
-# name: Run semantic-release
- # env:
-    GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  # 이 한 줄이면 충분합니다!
-  run: semantic-release
 
 jobs:
   release:
@@ -24,6 +19,8 @@ jobs:
           fetch-depth: 0
 
       - name: Setup Node
+        env:
+         FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
         uses: actions/setup-node@v4
         with:
           node-version: 24
