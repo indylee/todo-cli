@@ -1,0 +1,47 @@
+import sys
+import json
+from pathlib import Path
+
+DATA_FILE = Path("todos.json")
+
+
+def load_todos():
+    if not DATA_FILE.exists():
+        return []
+    with open(DATA_FILE, "r", encoding="utf-8") as f:
+        return json.load(f)
+
+
+def save_todos(todos):
+    with open(DATA_FILE, "w", encoding="utf-8") as f:
+        json.dump(todos, f, ensure_ascii=False, indent=2)
+
+
+def add_todo(text):
+    todos = load_todos()
+    new_id = (max([t["id"] for t in todos]) + 1) if todos else 1
+    todos.append({"id": new_id, "text": text, "done": False})
+    save_todos(todos)
+    print(f"추가됨: [{new_id}] {text}")
+
+
+def main():
+    if len(sys.argv) < 2:
+        print("사용법: python todo.py add \"할 일 내용\"")
+        return
+
+    command = sys.argv[1]
+
+    if command == "add":
+        if len(sys.argv) < 3:
+            print("추가할 할 일을 입력하세요.")
+            return
+        text = " ".join(sys.argv[2:])
+        add_todo(text)
+    else:
+        print(f"알 수 없는 명령어: {command}")
+
+
+if __name__ == "__main__":
+    main()
+
