@@ -8,3 +8,5 @@
     "@semantic-release/git"
   ]
 }
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
