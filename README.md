@@ -5,6 +5,8 @@ TODO CLI . Test 1
 
 ![version](https://img.shields.io/badge/version-v1.0.0-blue?style=for-the-badge)
 
+![version](https://img.shields.io/badge/version-v1.0.0-blue?style=social)
+
 
 ![GitHub release (latest by date)](https://img.shields.io/github/v/release/indylee/todo-cli)
 
