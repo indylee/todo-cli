@@ -89,4 +89,25 @@ git tag v1.0.0
 git push origin v1.0.0
 `
 
-![version](https://img.shields.io/badge/version-v1.0.0-blue)
+GitHub Actions로 자동 버전 관리  
+
+semantic-release 사용 
+- 자동 버전 증가  
+- 자동 태그  
+- 자동 릴리스  
+- 자동 CHANGELOG 생성  
+- GitHub Release 자동 발행
+
+
+프로젝트 루트에 다음 파일 추가:
+📌 .releaserc (semantic-release 설정 파일)
+
+
+🟢 GitHub Actions 워크플로우 생성
+.github/workflows/release.yml 파일 생성:
+
+
+- 기능 추가 → feat:  
+- 버그 수정 → fix:  
+- 큰 변경 → feat!:  
+
