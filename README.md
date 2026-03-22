@@ -106,8 +106,8 @@ semantic-release 사용
 🟢 GitHub Actions 워크플로우 생성
 .github/workflows/release.yml 파일 생성:
 
-
 - 기능 추가 → feat:  
 - 버그 수정 → fix:  
 - 큰 변경 → feat!:  
 
+Node.js 24 환경
