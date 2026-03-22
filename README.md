@@ -1,6 +1,12 @@
 # todo-cli
 TODO CLI . Test 1
 
+![version](https://img.shields.io/badge/version-v1.0.0-blue)
+
+![GitHub release (latest by date)](https://img.shields.io/github/v/release/indylee/todo-cli)
+
+![GitHub last commit](https://img.shields.io/github/last-commit/indylee/todo-cli)
+
 간단한 명령어 기반 할 일 관리 앱입니다.  
 Python으로 작성되었으며 Termux, Linux, macOS, Windows 어디서나 실행할 수 있습니다.
 
