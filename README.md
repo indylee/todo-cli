@@ -78,3 +78,4 @@ git tag v1.0.0
 git push origin v1.0.0
 `
 
+![version](https://img.shields.io/badge/version-v1.0.0-blue)
